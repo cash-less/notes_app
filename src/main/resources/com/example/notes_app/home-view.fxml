@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notes_app.NotesHomeController">
+   <children>
+      <HBox fx:id="hbox_home" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxWidth="150.0" minWidth="-Infinity" prefWidth="120.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnNotePad" mnemonicParsing="false" onAction="#onBtnNotePadClick" prefHeight="46.0" prefWidth="105.0" text="[ 🗒 ]" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNewNote" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBtnNewNoteClick" prefHeight="50.0" prefWidth="105.0" text="[ ✎₊ ]" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="120.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#onBtnProfileClick" prefHeight="46.0" prefWidth="105.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="190.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                <Button fx:id="btnLogOut" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onLogOutButtonClick" prefHeight="50.0" prefWidth="105.0" text="Log Out" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+              <fx:include prefHeight="500.0" prefWidth="700.0" source="note-pad-view.fxml" HBox.hgrow="ALWAYS" />
+
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
