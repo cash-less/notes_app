@@ -11,17 +11,12 @@
          <children>
             <AnchorPane maxWidth="150.0" minWidth="-Infinity" prefWidth="120.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Button fx:id="btnNotePad" mnemonicParsing="false" onAction="#onBtnNotePadClick" prefHeight="46.0" prefWidth="105.0" text="[ 🗒 ]" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                  <Button fx:id="btnNewNote" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBtnNewNoteClick" prefHeight="50.0" prefWidth="105.0" text="[ ✎₊ ]" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnNewNote" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBtnNewNoteClick" prefHeight="50.0" prefWidth="105.0" text="[ ✎₊ ]" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="120.0">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#onBtnProfileClick" prefHeight="46.0" prefWidth="105.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="190.0">
+                  <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#onBtnProfileClick" prefHeight="46.0" prefWidth="105.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -37,7 +32,7 @@
                   </Button>
                </children>
             </AnchorPane>
-              <fx:include prefHeight="500.0" prefWidth="700.0" source="note-pad-view.fxml" HBox.hgrow="ALWAYS" />
+              <fx:include prefHeight="500.0" prefWidth="700.0" source="create-note-view.fxml" HBox.hgrow="ALWAYS" />
 
          </children>
       </HBox>

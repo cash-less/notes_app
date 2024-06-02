@@ -63,19 +63,6 @@ public class NotesHomeController {
         stage.setTitle("Create Note Page");
     }
 
-    public void onBtnNotePadClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader loader = new FXMLLoader(NotesApplication.class.getResource("note-pad-view.fxml"));
-        AnchorPane root = loader.load();
-
-        hbox_home.getChildren().remove(1);
-        hbox_home.getChildren().add(root);
-
-        HBox.setHgrow(root, Priority.ALWAYS);
-
-        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Notes for u :>");
-    }
-
     void goToLogIn(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
